@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        /* primary */
+        --derk-blue: 233, 47%, 7%;
+        --dark-desaturated-blue: 244, 38%, 16%;
+        --soft-violet: 277, 64%, 61%;
+        /* neutral */
+        --white: 0, 0%, 100%;
+    }
+
+    *,
+    html {
+        font-family: "Inter", "Lexend Deca", sans-serif;
+    }
+}

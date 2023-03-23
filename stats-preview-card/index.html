@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/stats-preview-card/output.css" />
+
+        <title>Frontend Mentor | Stats preview card component</title>
+
+        <style>
+            .attribution {
+                font-size: 11px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body
+        class="bg-light-gray flex flex-col items-center justify-center w-screen h-screen bg-dark-blue"
+    >
+        <div class="bg-dark-desaturated-blue px-6 py-12 desktop:p-0 rounded-xl">
+            <div
+                class="max-w-xs desktop:max-w-[69rem] flex-col desktop:flex-row flex desktop:justify-between"
+            >
+                <div class="relative desktop:order-1 desktop:w-1/2 pl-4">
+                    <div
+                        class="absolute mix-blend-multiply inset-x-1/2 -translate-x-1/2 h-full w-full max-w-xs desktop:max-w-2xl bg-soft-violet rounded-lg"
+                    ></div>
+                    <img
+                        src="/stats-preview-card/images/image-header-desktop.jpg"
+                        alt="stats preview thumb"
+                        class="object-cover max-w-xs desktop:max-w-2xl mx-auto rounded-lg h-full w-full"
+                    />
+                </div>
+
+                <div class="desktop:py-12 desktop:w-1/2 desktop:pl-16">
+                    <h1
+                        class="text-xl leading-7 font-bold text-white text-center desktop:text-left desktop:text-4xl pt-6 px-12 desktop:px-0 desktop:max-w-md"
+                    >
+                        Get <span class="text-soft-violet">insights</span> that help your business
+                        grow.
+                    </h1>
+                    <p
+                        class="text-sm text-white opacity-50 max-w-xs px-8 desktop:px-0 text-center desktop:max-w-sm desktop:text-left mt-4 desktop:pt-4 desktop:leading-7 desktop:text-base"
+                    >
+                        Discover the benefits og data analytics and make better decisions regarding
+                        revenue, Customer experience, and overall efficiency.
+                    </p>
+
+                    <ul
+                        class="grid place-items-center text-center gap-4 pt-12 desktop:grid-cols-3 desktop:gap-2 desktop:place-items-start"
+                    >
+                        <li>
+                            <h4 class="text-xl desktop:text-2xl font-bold text-white">10k+</h4>
+                            <p
+                                class="uppercase text-white opacity-40 text-[10px] mt-2 font-['Lexend Deca']"
+                            >
+                                Companies
+                            </p>
+                        </li>
+                        <li>
+                            <h4 class="text-xl desktop:text-2xl font-bold text-white">314</h4>
+                            <p
+                                class="uppercase text-white opacity-40 text-[10px] mt-2 font-['Lexend Deca']"
+                            >
+                                Templates
+                            </p>
+                        </li>
+                        <li>
+                            <h4 class="text-xl desktop:text-2xl font-bold text-white">12M+</h4>
+                            <p
+                                class="uppercase text-white opacity-40 text-[10px] mt-2 font-['Lexend Deca']"
+                            >
+                                Queries
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="attribution mt-3 font-['Lexend Deca'] text-white">
+            Challenge by
+            <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a
+            >. Coded by <a href="https://github.com/inurhuda00">inurhuda00</a>.
+        </div>
+    </body>
+</html>
