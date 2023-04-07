@@ -8,21 +8,21 @@
 	<meta name="keywords" content="Frontend Mentor, Homepage Component Challenge, inurhuda00" />
 	<meta property="og:title" content="QR code component tailwindcss, unocss, svelte | Frontend Mentor" />
 	<meta property="og:description" content="QR code component  solution by inurhuda00 for FrontendMentor.io" />
-	<meta name="theme-color" content="#0000" />
-	<meta name="msapplication-navbutton-color" content="#0000" />
+	<meta name="theme-color" content="#1F3251" />
+	<meta name="msapplication-navbutton-color" content="#1F3251" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#0000" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1F3251" />
 </svelte:head>
 
-<main class="bg-#D6E2F0 flex flex-col items-center justify-center w-screen h-screen">
-	<div class="flex-col flex max-w-xs w-full bg-white rounded-3xl p-4 min-w-[20rem]">
+<main class="bg-#D6E2F0 flex h-screen w-screen flex-col items-center justify-center">
+	<div class="flex w-full min-w-[20rem] max-w-xs flex-col rounded-3xl bg-white p-4">
 		<img
 			src="/qr-code-card/images/image-qr-code.png"
 			alt={`qr-code image`}
-			class="overflow-hidden rounded-2xl max-w-xs" />
-		<div class="text-center w-full py-8 max-w-xs px-4">
-			<h1 class="font-bold text-xl text-#1F3251">Improve your front-end skills by building projects</h1>
-			<p class="pt-4 text-#7B879D font-sans">
+			class="max-w-xs overflow-hidden rounded-2xl" />
+		<div class="w-full max-w-xs px-4 py-8 text-center">
+			<h1 class="text-#1F3251 text-xl font-bold">Improve your front-end skills by building projects</h1>
+			<p class="text-#7B879D pt-4 font-sans">
 				Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
 			</p>
 		</div>

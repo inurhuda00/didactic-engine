@@ -2,7 +2,7 @@
 	export let color: string;
 </script>
 
-<button class="py-3 px-6 bg-#F2F2F2 rounded-full {color}"> Learn More </button>
+<button class="bg-#F2F2F2 rounded-full px-6 py-3 {color}"> Learn More </button>
 
 <style>
 	.text-\#FF8C00 {

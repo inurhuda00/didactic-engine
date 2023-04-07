@@ -1,23 +1,36 @@
 <svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
+	<title>Nft Preview Card Component | Frontend Mentor</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta
+		name="description"
+		content="Nft Preview Card Component  tailwindcss, unocss, svelte solution by inurhuda00 for FrontendMentor.io" />
+	<meta name="keywords" content="Frontend Mentor, Homepage Component Challenge, inurhuda00" />
+	<meta property="og:title" content="Nft Preview Card Component tailwindcss, unocss, svelte | Frontend Mentor" />
+	<meta
+		property="og:description"
+		content="Nft Preview Card Component  solution by inurhuda00 for FrontendMentor.io" />
+	<meta name="theme-color" content="#00FFFF" />
+	<meta name="msapplication-navbutton-color" content="#00FFFF" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#00FFFF" />
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" />
 </svelte:head>
 
-<div class="bg-#0D131E flex flex-col items-center justify-center w-screen py-24 lg:p-0 min-h-screen">
-	<div class="flex-col flex max-w-[17.6rem] w-full bg-#1B2430 rounded-xl p-6 lg:p-5">
+<div class="bg-#0D131E flex min-h-screen w-screen flex-col items-center justify-center py-24 lg:p-0">
+	<div class="bg-#1B2430 flex w-full max-w-[17.6rem] flex-col rounded-xl p-6 lg:p-5">
 		<img
 			src="/nft-preview-card/images/image-equilibrium.jpg"
 			alt={'qr-code image'}
 			class="overflow-hidden rounded-lg" />
-		<div class="w-full pt-4 max-w-xs text-#9ED1D9 font-outfit font-light">
-			<h1 class="font-bold text-xl text-white mb-3">Equilibrium #3429</h1>
-			<p class="mb-4 font-outfit text-sm mix-blend-luminosity">
+		<div class="text-#9ED1D9 font-outfit w-full max-w-xs pt-4 font-light">
+			<h1 class="mb-3 text-xl font-bold text-white">Equilibrium #3429</h1>
+			<p class="font-outfit mb-4 text-sm mix-blend-luminosity">
 				Our Equilibrium collection promotes balance and calm.
 			</p>
-			<ul class="flex justify-between mb-4 text-xs">
+			<ul class="mb-4 flex justify-between text-xs">
 				<li class="text-#00FFFF flex items-center gap-x-1 font-normal">
 					<svg width="11" height="18" xmlns="http://www.w3.org/2000/svg">
 						<path
@@ -35,11 +48,11 @@
 					3 days left
 				</li>
 			</ul>
-			<div class="border-t border-#2B374A pt-3 flex items-center gap-x-4">
+			<div class="border-#2B374A flex items-center gap-x-4 border-t pt-3">
 				<img
 					src="/nft-preview-card/images/image-avatar.png"
 					alt={'qr-code image'}
-					class="overflow-hidden rounded-full w-8 h-8 border border-white" />
+					class="h-8 w-8 overflow-hidden rounded-full border border-white" />
 				<p class="mix-blend-luminosity">
 					Creation of <span class="text-white mix-blend-screen">Jules Wyvern</span>
 				</p>

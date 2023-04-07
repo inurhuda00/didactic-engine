@@ -23,6 +23,6 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<div class="bg-#D6E2F0 flex flex-col items-center justify-center w-screen h-screen">
+<div class="bg-#D6E2F0 flex h-screen w-screen flex-col items-center justify-center">
 	{@html html}
 </div>

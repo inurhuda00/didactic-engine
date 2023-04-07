@@ -17,6 +17,9 @@
 			<li aria-current={$page.url.pathname.startsWith('/about') ? 'page' : undefined}>
 				<a href="/about">About</a>
 			</li>
+			<li aria-current={$page.url.pathname.startsWith('/convert') ? 'page' : undefined}>
+				<a href="/convert">Convert</a>
+			</li>
 		</ul>
 	</nav>
 

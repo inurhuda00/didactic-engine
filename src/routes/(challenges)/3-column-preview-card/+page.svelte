@@ -16,10 +16,10 @@
 		property="og:description"
 		content="3 column preview card component  solution by inurhuda00 for FrontendMentor.io" />
 
-	<meta name="theme-color" content="#0000" />
-	<meta name="msapplication-navbutton-color" content="#0000" />
+	<meta name="theme-color" content="#004047" />
+	<meta name="msapplication-navbutton-color" content="#004047" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#0000" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#004047" />
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link
@@ -27,10 +27,10 @@
 		rel="stylesheet" />
 </svelte:head>
 
-<main class="bg-#D6E2F0 flex flex-col items-center justify-center w-screen py-24 lg:p-0 lg:min-h-screen">
-	<div class="flex justify-center items-center bg-#F2F2F2 max-w-xs rounded-lg lg:max-w-57.5rem">
+<main class="bg-#D6E2F0 flex w-screen flex-col items-center justify-center py-24 lg:min-h-screen lg:p-0">
+	<div class="bg-#F2F2F2 lg:max-w-57.5rem flex max-w-xs items-center justify-center rounded-lg">
 		<section class="grid lg:flex">
-			<div class="bg-#FF8C00 rounded-t-lg lg:rounded-none lg:rounded-l-lg p-12 lg:min-w-[19.2rem]">
+			<div class="bg-#FF8C00 rounded-t-lg p-12 lg:min-w-[19.2rem] lg:rounded-none lg:rounded-l-lg">
 				<svg width="64" height="40" xmlns="http://www.w3.org/2000/svg" class="mb-8 lg:mb-10">
 					<g fill="none" fill-rule="evenodd">
 						<circle fill="#000" opacity=".201" cx="20" cy="20" r="20" />
@@ -40,7 +40,7 @@
 							fill-rule="nonzero" />
 					</g>
 				</svg>
-				<h3 class="font-cursive text-#F2F2F2 text-4xl uppercase mb-8 lg:mb-10">Sedans</h3>
+				<h3 class="font-cursive text-#F2F2F2 mb-8 text-4xl uppercase lg:mb-10">Sedans</h3>
 				<p class="font-lexend text-#FFFFFFBF mb-6 lg:mb-24">
 					Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or
 					on your next road trip.
@@ -56,14 +56,14 @@
 							fill-rule="nonzero" />
 					</g>
 				</svg>
-				<h3 class="font-cursive text-#F2F2F2 text-4xl uppercase mb-8 lg:mb-10">SUVs</h3>
+				<h3 class="font-cursive text-#F2F2F2 mb-8 text-4xl uppercase lg:mb-10">SUVs</h3>
 				<p class="font-lexend text-#FFFFFFBF mb-6 lg:mb-24">
 					Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
 					and off-road adventures.
 				</p>
 				<Button color="text-#007C86" />
 			</div>
-			<div class="bg-#004047 rounded-b-lg lg:rounded-none lg:rounded-r-lg p-12 lg:min-w-[19.2rem]">
+			<div class="bg-#004047 rounded-b-lg p-12 lg:min-w-[19.2rem] lg:rounded-none lg:rounded-r-lg">
 				<svg width="64" height="40" xmlns="http://www.w3.org/2000/svg" class="mb-8 lg:mb-10">
 					<g fill="none" fill-rule="evenodd">
 						<circle fill="#000" opacity=".201" cx="20" cy="20" r="20" />
@@ -73,7 +73,7 @@
 							fill-rule="nonzero" />
 					</g>
 				</svg>
-				<h3 class="font-cursive text-#F2F2F2 text-4xl uppercase mb-8 lg:mb-10">Luxury</h3>
+				<h3 class="font-cursive text-#F2F2F2 mb-8 text-4xl uppercase lg:mb-10">Luxury</h3>
 				<p class="font-lexend text-#FFFFFFBF mb-6 lg:mb-24">
 					Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
 					rental and arrive in style.

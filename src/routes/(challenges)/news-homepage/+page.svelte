@@ -33,15 +33,15 @@
 	<title>Frontend Mentor | News homepage tailwindcss</title>
 </svelte:head>
 
-<main class="relative flex flex-col items-center justify-center w-screen md:py-12 bg-#FCFCFC">
+<main class="bg-#FCFCFC relative flex w-screen flex-col items-center justify-center md:py-12">
 	{#if open}
 		<div class="relative z-10 transition-all" role="dialog">
-			<div class="fixed inset-0 bg-#050505 opacity-50 cursor-pointer" />
+			<div class="bg-#050505 fixed inset-0 cursor-pointer opacity-50" />
 			<div
-				class="fixed inset-y-0 right-0 flex max-w-[20rem] w-full"
+				class="fixed inset-y-0 right-0 flex w-full max-w-[20rem]"
 				use:clickOutside
 				on:click_outside={() => (open = !open)}>
-				<div class="flex h-full flex-col overflow-y-scroll bg-#FCFCFC py-6 w-full">
+				<div class="bg-#FCFCFC flex h-full w-full flex-col overflow-y-scroll py-6">
 					<div class="px-4">
 						<div class="flex items-start justify-end">
 							<button type="button" on:click={() => (open = !open)}>
@@ -55,12 +55,12 @@
 						</div>
 					</div>
 					<nav class="relative mt-6 flex-1 px-6">
-						<ul class="grid pt-16 space-y-5">
-							<li class="font-semibold text-#525F7F">Home</li>
-							<li class="font-semibold text-#525F7F">New</li>
-							<li class="font-semibold text-#525F7F">Popular</li>
-							<li class="font-semibold text-#525F7F">Trending</li>
-							<li class="font-semibold text-#525F7F">Categories</li>
+						<ul class="grid space-y-5 pt-16">
+							<li class="text-#525F7F font-semibold">Home</li>
+							<li class="text-#525F7F font-semibold">New</li>
+							<li class="text-#525F7F font-semibold">Popular</li>
+							<li class="text-#525F7F font-semibold">Trending</li>
+							<li class="text-#525F7F font-semibold">Categories</li>
 						</ul>
 					</nav>
 				</div>
@@ -69,7 +69,7 @@
 	{/if}
 
 	<header
-		class="mx-auto flex items-center justify-between p-6 lg:px-8 max-w-2xl md:max-w-6xl w-full px-4 h-20 md:h-[7.5rem] mb-3">
+		class="mx-auto mb-3 flex h-20 w-full max-w-2xl items-center justify-between p-6 px-4 md:h-[7.5rem] md:max-w-6xl lg:px-8">
 		<a href="/">
 			<span class="sr-only">Logo</span>
 			<svg width="65" height="40" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +78,7 @@
 					fill="#00001A" />
 			</svg>
 		</a>
-		<div class="md:hidden flex-initial">
+		<div class="flex-initial md:hidden">
 			<span class="sr-only">open menu</span>
 			<button type="button" on:click={() => (open = !open)}>
 				<svg width="40" height="17" xmlns="http://www.w3.org/2000/svg" class="w-10">
@@ -111,45 +111,45 @@
 	</header>
 
 	<main>
-		<div class="md:flex max-w-2xl w-full md:max-w-[71.5rem]">
+		<div class="w-full max-w-2xl md:flex md:max-w-[71.5rem]">
 			<div class="px-4 md:w-4/6">
 				<picture class="w-full">
 					<source media="(min-width: 1440)" srcset="/news-homepage/assets/images/image-web-3-mobile.jpg" />
 					<img src="/news-homepage/assets/images/image-web-3-desktop.jpg" alt="web3 thumbnail" />
 				</picture>
 				<article class="mt-6 md:mt-8 md:flex">
-					<header class="mb-2 md:text-6xl md:w-1/2">
-						<h2 class="text-5xl font-extrabold font-inter">The Bright Future of Web 3.0?</h2>
+					<header class="mb-2 md:w-1/2 md:text-6xl">
+						<h2 class="font-inter text-5xl font-extrabold">The Bright Future of Web 3.0?</h2>
 					</header>
 					<footer class="md:w-1/2 md:pl-4">
-						<p class="leading-7 mb-6 text-#525F7F text-[15px]">
+						<p class="text-#525F7F mb-6 text-[15px] leading-7">
 							We dive into the next evolution of the web that claims to put the power of the platforms
 							back into the hands of the people. But is it really fulfilling its promise?
 						</p>
 
 						<button
-							class="uppercase tracking-[0.2em] font-semibold bg-#FF5C5C px-10 py-3 md:px-10 md:py-4 text-#FCFCFC text-xs">
+							class="bg-#FF5C5C text-#FCFCFC px-10 py-3 text-xs font-semibold uppercase tracking-[0.2em] md:px-10 md:py-4">
 							Read more
 						</button>
 					</footer>
 				</article>
 			</div>
-			<div class="px-4 mt-12 md:mt-0 md:w-2/6">
+			<div class="mt-12 px-4 md:mt-0 md:w-2/6">
 				<section class="bg-#050505 p-8 md:pb-0">
 					<h2 class="text-#FFA24C text-4xl font-bold">New</h2>
-					<ul class="divide-y divide-#525F7F md:mt-3">
+					<ul class="divide-#525F7F divide-y md:mt-3">
 						<li class="py-12 md:py-6">
-							<h3 class="text-#FCFCFC text-lg font-semibold mb-3.5">Hydrogen VS Electric Cars</h3>
+							<h3 class="text-#FCFCFC mb-3.5 text-lg font-semibold">Hydrogen VS Electric Cars</h3>
 							<p class="text-#B3BFD7 text-[15px]">Will hydrogen-fueled cars ever catch up to EVs?</p>
 						</li>
 						<li class="py-12 md:py-6">
-							<h3 class="text-#FCFCFC text-lg font-semibold mb-3.5">The Downsides of AI Artistry</h3>
+							<h3 class="text-#FCFCFC mb-3.5 text-lg font-semibold">The Downsides of AI Artistry</h3>
 							<p class="text-#B3BFD7 text-[15px]">
 								What are the possible adverse effects of on-demand AI image generation?
 							</p>
 						</li>
 						<li class="py-12 md:py-6">
-							<h3 class="text-#FCFCFC text-lg font-semibold mb-3.5">Is VC Funding Drying Up?</h3>
+							<h3 class="text-#FCFCFC mb-3.5 text-lg font-semibold">Is VC Funding Drying Up?</h3>
 							<p class="text-#B3BFD7 text-[15px]">
 								Private funding by VC firms is down 50% YOY. We take a look at what that means.
 							</p>
@@ -158,18 +158,18 @@
 				</section>
 			</div>
 		</div>
-		<div class="max-w-2xl md:max-w-[71.5rem] w-full px-4 pt-16">
-			<div class="grid gap-12 md:gap-4 md:grid-cols-3">
+		<div class="w-full max-w-2xl px-4 pt-16 md:max-w-[71.5rem]">
+			<div class="grid gap-12 md:grid-cols-3 md:gap-4">
 				<section class="flex flex-initial">
 					<picture>
 						<img
 							src="/news-homepage/assets/images/image-retro-pcs.jpg"
 							alt="thumb reviving retro pcs"
-							class="w-28 object-cover md:w-36 p-1.5" />
+							class="w-28 object-cover p-1.5 md:w-36" />
 					</picture>
 					<div class="ml-4 flex-initial">
-						<span class="font-bold text-#B3BFD7 text-3xl">01</span>
-						<h3 class="font-extrabold py-2 md:pt-2 md:pb-1 text-lg">Reviving Retro PCs</h3>
+						<span class="text-#B3BFD7 text-3xl font-bold">01</span>
+						<h3 class="py-2 text-lg font-extrabold md:pb-1 md:pt-2">Reviving Retro PCs</h3>
 						<p class="text-#525F7F text-[15px]">What happens when old PCs are given modern upgrades?</p>
 					</div>
 				</section>
@@ -179,11 +179,11 @@
 						<img
 							src="/news-homepage/assets/images/image-top-laptops.jpg"
 							alt="thumb laptops of 2022"
-							class="w-28 object-cover md:w-36 p-1.5" />
+							class="w-28 object-cover p-1.5 md:w-36" />
 					</picture>
 					<div class="ml-4 flex-initial">
-						<span class="font-bold text-#B3BFD7 text-3xl">02</span>
-						<h3 class="font-extrabold py-2 md:pt-2 md:pb-1 text-lg">Top 10 Laptops of 2022</h3>
+						<span class="text-#B3BFD7 text-3xl font-bold">02</span>
+						<h3 class="py-2 text-lg font-extrabold md:pb-1 md:pt-2">Top 10 Laptops of 2022</h3>
 						<p class="text-#525F7F text-[15px]">Our best picks for various needs and budgets.</p>
 					</div>
 				</section>
@@ -193,12 +193,12 @@
 						<img
 							src="/news-homepage/assets/images/image-gaming-growth.jpg"
 							alt="thumb growth of gaming"
-							class="w-28 object-cover md:w-36 p-1.5" />
+							class="w-28 object-cover p-1.5 md:w-36" />
 					</picture>
 					<div class="ml-4 flex-initial">
-						<span class="font-bold text-#B3BFD7 text-3xl">03</span>
-						<h3 class="font-extrabold py-2 md:pt-2 md:pb-1 text-lg">The Growth of Gaming</h3>
-						<p class="leading-7 text-#525F7F md:text-[15px] md:leading-6">
+						<span class="text-#B3BFD7 text-3xl font-bold">03</span>
+						<h3 class="py-2 text-lg font-extrabold md:pb-1 md:pt-2">The Growth of Gaming</h3>
+						<p class="text-#525F7F leading-7 md:text-[15px] md:leading-6">
 							How the pandemic has sparked fresh opportunities.
 						</p>
 					</div>

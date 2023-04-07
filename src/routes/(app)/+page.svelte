@@ -4,8 +4,9 @@
 	export let data: PageData;
 
 	const challenges = data.challenges
-		.sort((a, b) => new Date(b.done_at).getTime() - new Date(a.done_at).getTime())
-		.filter((content) => content.status);
+		.filter((content) => content.status)
+		.sort((a, b) => new Date(b.done_at).getTime() - new Date(a.done_at).getTime());
+
 	const count = challenges.length % 2 ? 6 : 5;
 </script>
 
@@ -14,7 +15,7 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
-<section class="mx-auto max-w-7xl px-6 lg:px-8 py-24">
+<section class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
 	<div class="mx-auto max-w-2xl text-center">
 		<h2 class="text-base font-semibold leading-7">Everything you need</h2>
 		<p class="mt-2 text-3xl font-bold tracking-tight sm:text-4xl">Frontend Mentor Challenges</p>
@@ -42,7 +43,7 @@
 </section>
 <section class="relative overflow-hidden p-8">
 	<ul
-		class="grid grid-cols-1 lg:grid-cols-3 grid-flow-row-dense gap-4 font-mono text-sm text-center font-bold leading-6">
+		class="grid grid-flow-row-dense grid-cols-1 gap-4 text-center font-mono text-sm font-bold leading-6 lg:grid-cols-3">
 		{#each challenges as { title, url }, i}
 			<li
 				class="{(i + count) % 5
@@ -53,7 +54,7 @@
 				<div class="rounded-xl">
 					<iframe
 						{title}
-						class="w-full aspect-video rounded-xl transform min-h-640px"
+						class="min-h-640px aspect-video w-full transform rounded-xl"
 						src={url}
 						frameborder="0"
 						allowfullscreen />

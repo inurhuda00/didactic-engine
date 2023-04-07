@@ -6,7 +6,6 @@
 	export let data: PageData;
 
 	let challenges = data.challenges
-		.sort((a, b) => new Date(b.done_at).getTime() - new Date(a.done_at).getTime())
 		.filter((content) => content.status)
 		.reduce((acc: Array<{ type: string; contents: PageData['challenges'] }>, curr: PageData['challenges'][0]) => {
 			// mencari index objek dengan tipe yang sesuai
@@ -23,6 +22,11 @@
 
 			return acc;
 		}, []);
+
+	challenges = challenges.map((group) => {
+		group.contents.sort((a, b) => new Date(b.done_at).getTime() - new Date(a.done_at).getTime());
+		return group;
+	});
 
 	function getTimeDiff(start: string, done: string): TimeDiff {
 		const diff = new Date(done).getTime() - new Date(start).getTime();
@@ -45,7 +49,7 @@
 		content="the results of slicing design from frontendmentor with tailwindcss by inurhuda00" />
 </svelte:head>
 
-<div class="relative mx-auto w-full max-w-container space-y-20 px-4 pt-20 sm:px-6 lg:px-8">
+<div class="max-w-container relative mx-auto w-full space-y-20 px-4 pt-20 sm:px-6 lg:px-8">
 	<section id="product-marketing" class="scroll-mt-28">
 		<div class="mt-10 divide-y divide-slate-100 border-t border-slate-100 lg:mt-12">
 			{#each challenges as { type, contents }}
@@ -75,7 +79,7 @@
 											</a>
 										</h4>
 										<div
-											class="flex items-center justify-between relative mt-1.5 text-xs font-medium text-slate-500 line-clamp-2">
+											class="relative mt-1.5 line-clamp-2 flex items-center justify-between text-xs font-medium text-slate-500">
 											<span>
 												<!-- {new Date(done_at).toLocaleTimeString('id-ID', {
 													hour: '2-digit',

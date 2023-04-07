@@ -10,48 +10,48 @@
 	<meta
 		property="og:description"
 		content="Stats preview card component  solution by inurhuda00 for FrontendMentor.io" />
-	<meta name="theme-color" content="#0000" />
-	<meta name="msapplication-navbutton-color" content="#0000" />
+	<meta name="theme-color" content="#A17DF7" />
+	<meta name="msapplication-navbutton-color" content="#A17DF7" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#0000" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#A17DF7" />
 </svelte:head>
 
 <main
-	class="bg-#02030A flex flex-col items-center justify-center w-screen h-screen md:min-w-5xl min-h-4xl lg:min-h-auto">
-	<div class="bg-#1A1D2B px-6 py-12 lg:p-0 rounded-xl">
-		<div class="max-w-xs lg:max-w-[69rem] flex-col lg:flex-row flex lg:justify-between">
-			<div class="relative lg:order-1 lg:w-1/2 pl-4">
-				<div class="absolute mix-blend-multiply h-full w-full max-w-xs lg:max-w-2xl bg-#A17DF7 rounded-lg" />
+	class="bg-#02030A md:min-w-5xl min-h-4xl lg:min-h-auto flex h-screen w-screen flex-col items-center justify-center">
+	<div class="bg-#1A1D2B rounded-xl px-6 py-12 lg:p-0">
+		<div class="flex max-w-xs flex-col lg:max-w-[69rem] lg:flex-row lg:justify-between">
+			<div class="relative pl-4 lg:order-1 lg:w-1/2">
+				<div class="bg-#A17DF7 absolute h-full w-full max-w-xs rounded-lg mix-blend-multiply lg:max-w-2xl" />
 				<img
 					src="/stats-preview-card/images/image-header-desktop.jpg"
 					alt="stats preview thumb"
-					class="object-cover max-w-xs lg:max-w-2xl mx-auto rounded-lg h-full w-full" />
+					class="mx-auto h-full w-full max-w-xs rounded-lg object-cover lg:max-w-2xl" />
 			</div>
 
-			<div class="lg:py-12 lg:w-1/2 lg:pl-16">
+			<div class="lg:w-1/2 lg:py-12 lg:pl-16">
 				<h1
-					class="text-xl leading-7 font-bold text-white text-center lg:text-left lg:text-4xl pt-6 px-12 lg:px-0 lg:max-w-md">
+					class="px-12 pt-6 text-center text-xl font-bold leading-7 text-white lg:max-w-md lg:px-0 lg:text-left lg:text-4xl">
 					Get <span class="text-#A17DF7">insights</span> that help your business grow.
 				</h1>
 				<p
-					class="text-sm text-white opacity-50 max-w-xs px-8 lg:px-0 text-center lg:max-w-sm lg:text-left mt-4 lg:pt-4 lg:leading-7 lg:text-base">
+					class="mt-4 max-w-xs px-8 text-center text-sm text-white opacity-50 lg:max-w-sm lg:px-0 lg:pt-4 lg:text-left lg:text-base lg:leading-7">
 					Discover the benefits og data analytics and make better decisions regarding revenue, Customer
 					experience, and overall efficiency.
 				</p>
 
 				<ul
-					class="grid place-items-center text-center gap-4 pt-12 lg:grid-cols-3 lg:gap-2 lg:place-items-start">
+					class="grid place-items-center gap-4 pt-12 text-center lg:grid-cols-3 lg:place-items-start lg:gap-2">
 					<li>
-						<h4 class="text-xl lg:text-2xl font-bold text-white">10k+</h4>
-						<p class="uppercase text-white opacity-40 text-[10px] mt-2">Companies</p>
+						<h4 class="text-xl font-bold text-white lg:text-2xl">10k+</h4>
+						<p class="mt-2 text-[10px] uppercase text-white opacity-40">Companies</p>
 					</li>
 					<li>
-						<h4 class="text-xl lg:text-2xl font-bold text-white">314</h4>
-						<p class="uppercase text-white opacity-40 text-[10px] mt-2">Templates</p>
+						<h4 class="text-xl font-bold text-white lg:text-2xl">314</h4>
+						<p class="mt-2 text-[10px] uppercase text-white opacity-40">Templates</p>
 					</li>
 					<li>
-						<h4 class="text-xl lg:text-2xl font-bold text-white">12M+</h4>
-						<p class="uppercase text-white opacity-40 text-[10px] mt-2">Queries</p>
+						<h4 class="text-xl font-bold text-white lg:text-2xl">12M+</h4>
+						<p class="mt-2 text-[10px] uppercase text-white opacity-40">Queries</p>
 					</li>
 				</ul>
 			</div>

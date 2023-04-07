@@ -209,14 +209,14 @@ export const load = (() => {
 			{
 				thumb: 'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/lftjtn81b7brs2icc898.jpg',
 				title: 'Product Preview Card Component',
-				url: '/product-preview-card-component',
+				url: '/product-preview',
 				description:
 					'This HTML & CSS-only challenge will be perfect for anyone starting to build responsive projects.',
 				href: 'https://www.frontendmentor.io/challenges/product-preview-card-component-GO7UmttRfa',
 				type: 'components',
-				start_at: '',
-				done_at: '',
-				status: false,
+				start_at: '2023-04-07T03:15:55.306Z',
+				done_at: '2023-04-07T03:51:55.306Z',
+				status: true,
 			},
 			{
 				thumb: 'https://res.cloudinary.com/dz209s6jk/image/upload/f_auto,q_auto,w_475/Challenges/u57dcsnhvoalnixjt6kb.jpg',

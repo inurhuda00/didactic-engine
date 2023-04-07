@@ -6,3 +6,16 @@ button,
 	background-color: transparent; /* 2 */
 	background-image: none; /* 2 */
 }
+
+.scrollbar-hide {
+	/* IE and Edge */
+	-ms-overflow-style: none;
+
+	/* firefox */
+	scrollbar-width: none;
+}
+
+/* safari and chrome */
+.scrollbar-hide::-webkit-scrollbar {
+	display: none;
+}
