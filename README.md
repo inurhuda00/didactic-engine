@@ -1,38 +1,20 @@
-# create-svelte
+# Frontend Mentor Challenge Repository
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This repository contains my solutions for the challenges from [Frontend Mentor](https://www.frontendmentor.io/), including [components](<https://github.com/inurhuda00/didactic-engine/tree/main/src/routes/(challenges)>) building and design slicing exercises.
 
-## Creating a project
+## Built With
 
-If you're seeing this, you've probably already done this step. Congrats!
+The website was built using:
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+-   [Svelte](https://svelte.dev/)
+-   [SvelteKit](https://kit.svelte.dev/)
+-   [Tailwind CSS](https://tailwindcss.com/)
+-   [UnoCSS](https://unocss.com/)
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+### Svelte and SvelteKit
 
-## Developing
+The main reason for using Svelte and SvelteKit is the ability to apply scoped styles. This allows for styles, including fonts, to be changed on a per-page basis.
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+### Tailwind CSS and UnoCSS
 
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Tailwind CSS is great for consistency in styling and is also familiar to me. Additionally, Tailwind CSS IntelliSense in VS Code extensions is excellent. UnoCSS, on the other hand, has instant on-demand styling which is very powerful.
