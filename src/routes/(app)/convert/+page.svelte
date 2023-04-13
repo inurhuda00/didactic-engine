@@ -2,7 +2,28 @@
 	import color from 'color-convert';
 
 	let text = 'Click to Copy';
-	let input: string = ``;
+	let input: string = `
+### Primary
+
+-   Light red: hsl(0, 100%, 67%)
+-   Orangey yellow: hsl(39, 100%, 56%)
+-   Green teal: hsl(166, 100%, 37%)
+-   Cobalt blue: hsl(234, 85%, 45%)
+
+## Gradients
+
+-   Light slate blue (background): hsl(252, 100%, 67%)
+-   Light royal blue (background): hsl(241, 81%, 54%)
+
+-   Violet blue (circle): hsla(256, 72%, 46%, 1)
+-   Persian blue (circle): hsla(241, 72%, 46%, 0)
+
+### Neutral
+
+-   White: hsl(0, 0%, 100%)
+-   Pale blue: hsl(221, 100%, 96%)
+-   Light lavender: hsl(241, 100%, 89%)
+-   Dark gray blue: hsl(224, 30%, 27%)`;
 
 	function replaceHSLWithHex(str: string): string {
 		return str.replace(/hsl\((\d+),\s*(\d+)%,\s*(\d+)%\)/g, (_, h, s, l) => {
@@ -78,13 +99,16 @@
 	<section class="mt-6 grid items-center gap-2 border-2 border-black p-4 text-sm md:grid-cols-2">
 		<textarea
 			bind:value={input}
-			class="scrollbar-hide h-full min-h-[8rem] resize-none border-2 border-black p-2 focus:outline-none"
+			class="scrollbar-hide max-w-auto h-full min-h-[8rem] resize-none overflow-x-auto border-2 border-black p-2 focus:outline-none sm:max-w-none"
 			placeholder="Masukan string dengan hsl" />
-		<div class="relative h-full min-h-[8rem] cursor-pointer" use:clickToCopy={'#text'} on:copied={handleCopied}>
+		<div
+			class="max-w-auto relative h-full min-h-[8rem] cursor-pointer overflow-hidden sm:max-w-none"
+			use:clickToCopy={'#text'}
+			on:copied={handleCopied}>
 			<button class="absolute right-0 top-0 border-2 border-black px-2 py-1">
 				{text}
 			</button>
-			<pre class="h-full border-2 border-black p-2" id="text">{convert}</pre>
+			<pre class="h-full overflow-x-auto border-2 border-black p-2" id="text">{convert}</pre>
 		</div>
 	</section>
 </main>

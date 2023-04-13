@@ -19,7 +19,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" />
 </svelte:head>
 
-<div class="bg-#0D131E flex min-h-screen w-screen flex-col items-center justify-center py-24 lg:p-0">
+<div class="bg-#0D131E flex min-h-screen w-screen flex-col items-center justify-center py-12 lg:p-0">
 	<div class="bg-#1B2430 flex w-full max-w-[17.6rem] flex-col rounded-xl p-6 lg:p-5">
 		<img
 			src="/nft-preview-card/images/image-equilibrium.jpg"
