@@ -35,10 +35,10 @@
 	<meta name="keywords" content="Frontend Mentor, Order Summary Component, inurhuda00" />
 	<meta property="og:title" content="Order Summary Component tailwindcss, unocss, svelte | Frontend Mentor" />
 	<meta property="og:description" content="Order Summary Component  solution by inurhuda00 for FrontendMentor.io" />
-	<meta name="theme-color" content="#00FFFF" />
-	<meta name="msapplication-navbutton-color" content="#00FFFF" />
+	<meta name="theme-color" content="#7857FF" />
+	<meta name="msapplication-navbutton-color" content="#7857FF" />
 	<meta name="apple-mobile-web-app-capable" content="yes" />
-	<meta name="apple-mobile-web-app-status-bar-style" content="#00FFFF" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="#7857FF" />
 
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link
@@ -47,7 +47,7 @@
 </svelte:head>
 
 <Wrapper>
-	<div
+	<section
 		class="font-hanken mx-auto grid min-w-[24rem] max-w-sm border md:flex md:min-w-[46rem] md:max-w-[46rem] md:rounded-[2rem]">
 		<header
 			class="from-#7857FF to-#2E2BE9 grid place-items-center rounded-b-[2rem] bg-gradient-to-b md:w-1/2 md:rounded-t-[2rem]">
@@ -65,11 +65,11 @@
 			</div>
 		</header>
 
-		<div class="grid gap-y-6 p-6 md:flex-1 md:px-10">
+		<section class="grid gap-y-6 p-6 md:flex-1 md:px-10">
 			<h3 class="text-lg font-bold md:text-[1.3rem]">Summary</h3>
-			<ul class="grid gap-y-4">
+			<ul class="grid gap-y-4" role="tablist">
 				{#each summaries as { category, score, icon }}
-					<li class="flex items-center justify-between rounded-lg px-4 py-4">
+					<li class="flex items-center justify-between rounded-lg px-4 py-4" role="tab">
 						<span class="flex items-center gap-x-4 font-medium">
 							<img src="/results-summary{icon}" alt="icon summary" />
 							{category}
@@ -79,8 +79,8 @@
 				{/each}
 			</ul>
 			<button class="bg-#303B5A rounded-full py-[0.825rem] text-lg font-medium text-white">Continue</button>
-		</div>
-	</div>
+		</section>
+	</section>
 </Wrapper>
 
 <style>
