@@ -12,7 +12,9 @@
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta
+		name="description"
+		content="Frontend Mentor Challenges slicing design from Frontend Mentor Challenges build with tailwindcss, Unocss, & Svelte. Solution By inurhuda00" />
 </svelte:head>
 
 <section class="mx-auto max-w-7xl px-6 py-24 lg:px-8">
